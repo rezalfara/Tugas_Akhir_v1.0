@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_white_rounded">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELAMAT DATANG"
+            android:layout_marginTop="15sp"
+            android:textSize="25sp"
+            android:textAlignment="center"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan masuk untuk melanjutkan"
+            android:textSize="15sp"
+            android:textAlignment="center"></TextView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_below="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="50sp">
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Handphone"
+                android:inputType="numberDecimal"/>
+
+            <ImageView
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_marginLeft="-30sp"
+                android:layout_marginTop="15sp"
+                android:src="@drawable/phone"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"/>
+
+            <ImageView
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_marginLeft="-40sp"
+                android:layout_marginTop="15sp"
+                android:src="@drawable/password"></ImageView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"
+            android:background="#308C6D"
+            android:text="Masuk"
+            app:backgroundTint="@color/black"
+            android:layout_marginBottom="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_buat_akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun"
+            android:textAlignment="center"
+            android:layout_marginBottom="80sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="©2022"
+            android:textAlignment="center"
+            android:layout_marginBottom="5sp"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

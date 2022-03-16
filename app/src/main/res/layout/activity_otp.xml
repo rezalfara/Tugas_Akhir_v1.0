@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_otp_border"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Kode OTP"
+            android:layout_margin="30sp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"></TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_kodeotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30sp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/otp1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:inputType="phone"
+                android:background="@drawable/bg_isi_otp_border"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="20sp"/>
+            <EditText
+                android:id="@+id/otp2"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:inputType="phone"
+                android:background="@drawable/bg_isi_otp_border"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="20sp"/>
+            <EditText
+                android:id="@+id/otp3"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:inputType="phone"
+                android:background="@drawable/bg_isi_otp_border"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="20sp"/>
+            <EditText
+                android:id="@+id/otp4"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:inputType="phone"
+                android:background="@drawable/bg_isi_otp_border"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="30sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnverify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="30sp"
+            android:text="VERIFIKASI"
+            app:backgroundTint="@color/black"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

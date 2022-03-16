@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_otp_border"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="40sp"
+            android:background="@drawable/left_arrows"
+            android:layout_margin="20sp"></ImageView>
+
+        <ImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:background="@drawable/user_black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20sp"></ImageView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_nama_akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:background="@drawable/user"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginLeft="30sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_asal_kota_akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:background="@drawable/city"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asal Kota"
+                android:layout_marginLeft="30sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_nomorHP_akun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="10sp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:background="@drawable/phone"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Handphone"
+                android:layout_marginLeft="30sp"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ganti_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:text="Ganti Password"
+            android:background="@drawable/bg_otp_border"
+            app:backgroundTint="@color/black"></Button>
+
+        <Button
+            android:id="@+id/btn_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginBottom="70sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="15sp"
+            android:text="Keluar"
+            android:background="@drawable/bg_otp_border"
+            app:backgroundTint="@color/black"></Button>
+    </LinearLayout>
+
+</RelativeLayout>
